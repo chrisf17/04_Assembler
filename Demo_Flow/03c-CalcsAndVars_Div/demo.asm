@@ -15,7 +15,7 @@ _start:
     xor edx, edx ; Clear the edx register
 
     mov eax, [number]       ; Load the value of number into eax
-    mov ebx, [divisor]   ; Load the divisor into ebx
+    mov ebx, [divisor]      ; Load the divisor into ebx
     div ebx                 ; Multiply eax by ebx, result gets stored in eax
 
     mov ebx, eax       ; Load the value of result into ebx for the return value

@@ -17,7 +17,7 @@ _start:
     ; Add first and third durations_array elements together and store the result in ebx
     ; Result should be 14
 
-    mov eax, ?    ; Load the durations_array element 0 into eax
+    mov eax, ?   ; Load the durations_array element 0 into eax
     mov ebx, ?     ; Load the durations_array element 3 into ebx
  
     add ebx, eax   ; Add the value in eax to ebx

@@ -12,6 +12,7 @@ _start:
     
   
     movzx eax, byte [number]        ; Load the value of duration into eax as a byte from a char variable using movzx (zero extend) 
+    inc eax                         ; Increment the value of eax by 1
     ; add eax, 48
     add eax, '0'                    ; Add the value of '0' to number to get the ASCII value
 

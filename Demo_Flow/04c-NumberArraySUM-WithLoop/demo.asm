@@ -17,11 +17,11 @@ _start:
     
     ; TODO: Sum the values in the numbers array and store the result in the ebx register
     
-    mov ecx, [durations_length]     ; Load the length of the array into ecx
+    mov cl, [durations_length]     ; Load the length of the array into ecx
     mov esi, durations_array        ; Load the address of the array into esi
 
 .sum_loop:
-    mov eax, [esi]            ; Load byte at [esi] into eax (could also use movzx or lodsb)
+    mov al, [esi]            ; Load byte at [esi] into eax (could also use movzx or lodsb)
     add ebx, eax              ; Add the value in al to ebx
     inc esi                   ; Increment esi to point to the next byte in the array
     dec ecx                   ; Decrement ecx to keep track of remaining elements
